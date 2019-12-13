@@ -1,0 +1,165 @@
+Questions,Answers,Labels
+Qno1.1,Are you the life of the party?,E
+Qno1.2,Do you talk a lot?,E
+Qno1.3,Do you feel comfortable around people?,E
+Qno1.4, Do you keep yourslef in the background?,E
+Qno1.5, Do you start conversations?,E
+Qno1.6, Do you have little to say?,E
+Qno1.7,Do you talk to a lot of different people at parties?,E
+Qno1.8, Do you like to draw attention to myself?,E
+Qno1.9,Do you mind being the center of attention?,E
+Qno1.10,Are you quiet around strangers?,E
+Qno2.1,Do you feel little concern for others?,A
+Qno2.2,Are you interested in people?,A
+Qno2.3,Do you insult people?,A
+Qno2.4,Do you sympathize with others' feelings?,A
+Qno2.5,Are you interested in other people's problems?,A
+Qno2.6,Do you have a soft heart?,A
+Qno2.7,Are you not really interested in others?,A
+Qno2.8,Do you take time out for others?,A
+Qno2.9,Do you feel others' emotions?,A
+Qno2.10,Do you make people feel at ease?,A
+Qno3.1,Are you always prepared?,C
+Qno3.2,Do you leave your belongings around?,C
+Qno3.3,Do you pay attention to details?,C
+Qno3.4,Do you make a mess of things?,C
+Qno3.5,Do you get chores done right away?,C
+Qno3.6,Do you often forget to put things back in their proper place?,C
+Qno3.7,Do you like order?,C
+Qno3.8, Do you shirk your duties?,C
+Qno3.9,Do you follow a schedule?,C
+Qno3.10,Are you exacting in your work?,C
+Qno4.1,Do you get stressed out easily?,N
+Qno4.2,Are you relaxed most of the time?,N
+Qno4.3,Do you worry about things?,N
+Qno4.4, Do you seldom feel blue?,N
+Qno4.5, Are you easily disturbed?,N
+Qno4.6,Do you get upset easily?,N
+Qno4.7, Do you change your mood a lot?,N
+Qno4.8,Do you have frequent mood swings?,N
+Qno4.9,Do you get irritated easily?,N
+Qno4.10,Do you often feel blue?,N
+Qno5.1,Do you have a rich vocabulary?,O
+Qno5.2,Do you have difficulty understanding abstract ideas?,O
+Qno5.3,Do you have a vivid imagination?,O
+Qno5.4,Are you not interested in abstract ideas?,O
+Qno5.5,Do you have excellent ideas?,O
+Qno5.6,Don't you have a good imagination?,O
+Qno5.7,Are you quick to understand things?,O
+Qno5.8,Do you use difficult words?,O
+Qno5.9,Do you spend time reflecting on things?,O
+Qno5.10,Are you full of ideas?,O
+Qno1.6,Do you enjoy looking at maps of different places?,O
+Qno2.6,Do you often push yourself very hard when trying to achieve a goal?,C
+Qno3.6,Do you generally accept people?s faults without complaining about them?,A
+Qno4.6,"In social situations, are you usually the one who makes the first move?",E
+Qno5.6,Do you worry a lot less than most people do?,N
+Qno1.7,"Would you enjoy creating a work of art, such as a novel, a song, or a painting?",O
+Qno2.7,"When working on something, do you pay much attention to small details?",C
+Qno3.7,Are you usually quite flexible in your opinions when people disagree with you?,A
+Qno4.7,Do you enjoy having lots of people around to talk with?,E
+Qno5.7,Can you handle difficult situations without needing emotional support from anyone else?,N
+Qno1.8,Do you like people who have unconventional views?,O
+Qno2.8,Do you make a lot of mistakes because you don't think before you act?,C
+Qno3.8,"Do you rarely feel anger, even when people treat you quite badly?",A
+Qno4.8,"Do you feel cheerful and optimistic, on most days?",E
+Qno5.8,"When someone I know well is unhappy, I can almost feel that person's pain myself.",N
+Qno1.9,"If you had the opportunity, would you like to attend a classical music concert?",O
+Qno2.9,Do people often joke with you about the messiness of your room or desk?,C
+Qno3.9,"If someone has cheated you once, will you always feel suspicious of that person?",A
+Qno4.9,Do you feel that you are an unpopular person?,E
+Qno5.9,"When it comes to physical danger, are you very fearful?",N
+Qno1.10,Would you be very bored by a book about the history of science and technology?,O
+Qno2.10,"Often when you set a goal, do you end up quitting without having reached it?",C
+Qno3.10,Do you tend to be lenient in judging other people?,A
+Qno4.10,"When you are in a group of people, are you often the one who speaks on behalf of the group?",E
+Qno5.10,"Do you rarely, if ever, have trouble sleeping due to stress or anxiety?",N
+Qno1.11,Do people have often tell you that you have a good imagination?,O
+Qno2.11,"Do you always try to be accurate in your work, even at the expense of time?",C
+Qno3.11,"When people tell you that you are wrong, is your first reaction is to argue with them?",A
+Qno4.11,Do you prefer jobs that involve active social interaction to those that involve working alone?,E
+Qno5.11,"Whenever you feel worried about something, do you want to share your concern with another person?",N
+Qno1.12,Do you think of yourself as a somewhat eccentric person?,O
+Qno2.12,Do you allow your impulses to govern your behavior?,C
+Qno3.12,Do moost people tend to get angry more quickly than you do?,A
+Qno4.12,Do people often tell you that you should try to cheer up?,E
+Qno5.12,Do you feel strong emotions when someone close to you is going away for a long time?,N
+Qno1.13,Do you like to just watch the wind as it blows through the trees?,O
+Qno2.13,"When working, do you sometimes have difficulties due to being disorganized?",C
+Qno3.13,Do you find it hard to fully forgive someone who has done something mean to you?,A
+Qno4.13,Do you sometimes feel that you are a worthless person?,E
+Qno5.13,Even in an emergency would you feel like panicking?,N
+Qno1.14,Have you never really enjoyed looking through an encyclopedia?,O
+Qno2.14,Do you do only the minimum amount of work needed to get by?,C
+Qno3.14,"Even when people make a lot of mistakes, do you rarely say anything negative?",A
+Qno4.14,Do you tend to feel quite self-conscious when speaking in front of a group of people?,E
+Qno5.14,Do you get very anxious when waiting to hear about an important decision?,N
+Qno1.15,Do you think of yourself as the artistic or creative type?,O
+Qno2.15,Do people often call you a perfectionist?,C
+Qno3.15,Do you find it hard to compromise with people when you really think you are right?,A
+Qno4.15,Is the first thing that you always do in a new place is to make friends?,E
+Qno5.15,Do you rarely discuss your problems with other people?,N
+Qno1.16,Do you find it boring to discuss philosophy?,O
+Qno2.16,"Do you prefer to do whatever comes to mind, rather than stick to a plan?",C
+Qno3.16,Do you find it hard to keep your temper when people insult you?,A
+Qno4.16,Are most people more upbeat and dynamic than you generally are?,E
+Qno5.16,Do you remain unemotional even in situations where most people get very sentimental?,N
+Qno1.1,Are you talkative?,E
+Qno1.2,Are you reserved?  ,E
+Qno1.3,Are you full of energy?,E
+Qno1.4,Do you generate a lot of enthusiasm? ,E
+Qno1.5,Do you tend to be quiet?,E
+Qno1.6,Are you sometimes shy and inhibited?,E
+Qno1.7,Are you outgoing and sociable?,E
+Qno2.1,Do you tend to find fault with others?,A
+Qno2.2,Are you helpful and unselfish with others?,A
+Qno2.3,Do you start quarrels with others?,A
+Qno2.4,Do you have a forgiving nature?,A
+Qno2.5,Are you generally trusting?,A
+Qno2.6,Can you be cold and aloof?,A
+Qno2.7,Are you considerate and kind to almost everyone?,A
+Qno2.8,Are you sometimes rude to others?,A
+Qno2.9,Do you like to cooperate with others?,A
+Qno3.1,Do you do a thorough job?,C
+Qno3.2,Do you get somewhat careless?,C
+Qno3.3,Are you a reliable worker?,C
+Qno3.4,Do you tend to be disorganized?,C
+Qno3.5,Do you tend to be lazy?,C
+Qno3.6,Do you persevere until the task is finished?,C
+Qno3.7,Do you makes plans and follow through with  them? ,C
+Qno3.8,Do you do things efficiently? ,C
+Qno3.9,Are you easily distracted? ,C
+Qno4.1,"Are you depressed, blue? ",N
+Qno4.2,Are you relaxed and handles stress well?,N
+Qno4.3,Do you get tense? ,N
+Qno4.4,Do you worry a lot? ,N
+Qno4.5,"Are you emotionally stable, not easily upset?",N
+Qno4.6,Do you get moody?,N
+Qno4.7,Do you remain calm in tense situations? ,N
+Qno4.8,Do you get nervous easily?,N
+Qno5.1,Do you come up with new ideas?,O
+Qno5.2,Are you curious about many different things?,O
+Qno5.3,Are you ingenious and a deep thinker? ,O
+Qno5.4,Do you values artistic and aesthetic experiences? ,O
+Qno5.5,Are you inventive? ,O
+Qno5.6,Do you likes to reflect and play with ideas? ,O
+Qno5.7,Do you prefer work that is routine? ,O
+Qno5.8,Do you have an active imagination?,O
+Qno5.9,Do you have a few artistic interests?,O
+Qno5.10,"Are you sophisticated in art, music, or  literature?",O
+Qno3.3,Do people sometimes tell you that you are too stubborn?,A
+Qno4.3,"Do you avoid making ""small talk"" with people?",E
+Qno5.3,"When you suffer from a painful experience, do you need someone to make me feel comfortable?",N
+Qno1.4,Do you think that paying attention to radical ideas is a waste of time?,O
+Qno2.4,Do you make decisions based on the feeling of the moment rather than on careful thought?,C
+Qno3.4,Do people think of you as someone who has a quick temper?,A
+Qno4.4,Are you energetic nearly all the time?,E
+Qno5.4,Do you feel like crying when you see other people crying?,N
+Qno1.5,Would you spend your time reading a book of poetry?,O
+Qno2.5,"Do you plan ahead and organize things, to avoid scrambling at the last minute?",C
+Qno3.5,"Is your attitude toward people who have treated you badly is, ""forgive and forget""?",A
+Qno4.5,Do you think that most people like some aspects of your personality?,E
+Qno5.5,Do you mind doing jobs that involve dangerous work?,N
+Qno4.2,Do you rarely express your opinions in group meetings?,E
+Qno5.2,Do you sometimes can't help worrying about little things?,N
+Qno1.3,Would you a job that requires following a routine rather than being creative?,O

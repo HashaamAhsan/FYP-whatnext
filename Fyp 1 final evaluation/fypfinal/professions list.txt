@@ -1,0 +1,37 @@
+Accountant - C
+Actor/Actress - E
+Architect - O
+Astronomer - O
+Chef/Cook - O
+Dentist - C
+Designer - O
+Doctor - C
+Engineer - C
+Farmer - C
+Fireman - C
+Hairdresser - E
+Journalist - E
+Judge - C
+Lawyer - E
+Lecturer - A
+Lifeguard - E
+Mechanic - C
+Model - E
+Newsreader - E
+Nurse - A
+Optician - C
+Painter - O
+Pharmacist - C
+Photographer - O
+Pilot - C
+Politician - E
+Policeman/Policewoman - C
+Real estate agent - A
+Receptionist - E
+Scientist - O
+Secretary - A
+Shop assistant - E
+Soldier - C
+Teacher - A
+Translator - E
+Travel agent - O

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <!-- Favicons -->
+    <link href="../static/icon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="../static/style.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="../static/mystyle.css" rel="stylesheet">
+    <title>What Next</title>
+    <style>
+
+p {
+    font-size: 15px;
+    color: black;
+    font-family: "Arial, Helvetica, sans-serif";
+}
+.col-sm-10 img {
+    margin-right: 10px;
+}
+.col-sm-10 .img-left {
+    float: left;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+h1, h3
+{
+    font-family: "Arial, Helvetica, sans-serif";
+}
+
+.block:nth-child(2n) {
+    border-radius: 25px;
+    background-color: #DCDCDC;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.block:nth-child(2n+1) {
+    border-radius: 25px;
+    background-color: #12bdcc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+  </head>
+  <body>
+	<header id="header">
+		<div class="container">
+
+			<div id="logo" class="pull-left">
+				<a><img src="../static/icon.png" alt="" title="" /></a>
+			</div>
+
+			<nav id="nav-menu-container">
+				<ul class="nav-menu">
+					<li class="menu-active"><a href="../templates/Chatbot.html">Home</a></li>
+					<li><a href="../static/Find Uni.html">Find a Uni</a></li>
+					<li><a href="../static/Find Course.html">Find a Course</a></li>
+
+			  
+				</ul>
+			</nav><!-- #nav-menu-container -->
+		</div>
+	</header><!-- #header -->
+<section id="about">
+<!-- <div class="page-header text-center"> -->
+            <!-- <h1>DR BEG</h1> -->
+        <!-- </div> -->
+      <div class="container">
+       
+           
+           
+                    <div class="chat-container">
+					<div class="row align-items-center h-100">
+					<div class="col-md-11 col-sm-10">
+					<div class="block" >
+                <div class="row">
+                    <div class="col-sm-10">
+                        <img class="img-left" src="../static/bot.png"/>
+						<font color="white">
+                        <div class="content-heading"><h3 >DR BEG</h3></div>
+                        <p style="color:white ; font-family:arial">Hi, I'm Dr. Beg, the What Next chatbot. I'm here to help you find the right course at the perfect uni for you, lets start what is your name?</p>
+						</font>
+					</div>
+                </div>
+            </div>
+			</div>
+			</div>
+			<form method="POST" action="/result">
+			{% if check == "1" %}
+				<div class="dropdown">
+					<button class="dropbtn">Dropdown</button>
+						<div class="dropdown-content">
+							<a href="#">Link 1</a>
+							<a href="#">Link 2</a>
+							<a href="#">Link 3</a>
+						</div>
+				</div>
+			{% endif %}
+			</form>
+					<!-- <img class="img-left" src="../static/bot.png"/> -->
+                        <!-- <!-- chat messages -->
+                        <!-- <div class="chat-message col-md-5 offset-md-7 bot-message"> -->
+                          <!-- Hi, I'm Dr. Beg, the What Next chatbot. I'm here to help you find the right course at the perfect uni for you, lets start what is your name? -->
+                        <!-- </div> -->
+                    </div>
+                    <form id="target">
+						<!-- <div class="fixed-bottom"> -->
+        <!-- <div class="row"> -->
+            <!-- <div class="col sm-2"> -->
+            <!-- </div> -->
+        <!-- <div class="col-sm-8"> -->
+            <!-- <div class="form-group"> -->
+                <!-- <input class="form-control" type="text" name="message" placeholder="Ask a Question" autocomplete="off" id="input_message"/> -->
+				<!-- <input type="submit" hidden> -->
+            <!-- </div> -->
+        <!-- </div> -->
+            <!-- <div class="col-sm-2"> -->
+                <!-- <div class="form-group"> -->
+                <!-- <button class="btn btn-primary btn-md" style="background-color: #58bd7b; color: black; border: #7FFF00" type="submit">Ask</button> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+		<div class="fixed-bottom">
+        <div class="row">
+            <div class="col sm-2">
+            </div>
+        <div class="col-sm-8">
+            <div class="form-group">
+                <input class="form-control" type="text" name="message" placeholder="Ask a Question" autocomplete="off" id="input_message"/>
+				<input type="submit" hidden>
+            </div>
+        </div>
+            <div class="col-sm-2">
+                <div class="form-group">
+                <button class="btn btn-primary btn-md" style="background-color: :#0bc9e0; color:white; border: #0bc9e0" type="submit">Ask</button>
+                </div>
+            </div>
+        </div>
+        </div>
+                       <!-- <input class="input" type="text" value="" placeholder="Enter message..." id="input_message"/> -->
+                       <!-- <input type="submit" hidden> -->
+                    </form>
+                
+            
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='custom.js')}}"></script>
+</section>
+  </body>
+</html>
