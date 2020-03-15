@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Find Courses</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Unicat project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../static/styles/bootstrap4/bootstrap.min.css">
+<link href="../static/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="../static/plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../static/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="../static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="../static/plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="../static/styles/courses.css">
+<link rel="stylesheet" type="text/css" href="../static/styles/courses_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+	<header class="header">
+			
+		<!-- Top Bar -->
+		<div class="top_bar">
+			<div class="top_bar_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+								<ul class="top_bar_contact_list">
+									<li><div class="question">Have any questions?</div></li>
+									<li>
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<div>0312-6140888</div>
+									</li>
+									<li>
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										<div>whatnextcom71@gmail.com</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+
+		<!-- Header Content -->
+		<div class="header_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_content d-flex flex-row align-items-center justify-content-start">
+							<div class="logo_container">
+								<a href="#">
+									<img src="../static/images/logo.png" style="width:5rem;height:5rem;">
+									<div class="logo_text">WhatNext?</div>
+								</a>
+							</div>
+							<nav class="main_nav_contaner ml-auto">
+								<ul class="main_nav">
+									<li><a href="/">Home</a></li>
+									<li><a href="/findCourse">Find Courses</a></li>
+									<li><a href="/findUni">Find Universities</a></li>
+								</ul>
+							</nav>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+				
+	</header>
+
+	
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="breadcrumbs_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="breadcrumbs">
+							<ul>
+								<li><a href="../index.html">Home</a></li>
+								<li>Courses</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</div>
+
+	<!-- Courses -->
+
+	<div class="courses">
+		<div class="container">
+			<div class="row">
+
+				<!-- Courses Main Content -->
+				<div class="col-lg-8">
+					<div class="courses_search_container">
+						<form action="/courseSearch" id="courses_search_form" class="courses_search_form d-flex flex-row align-items-center justify-content-start">
+					
+							<!-- <input name="text" class="courses_search_input" placeholder="Search Courses" required="required"> -->
+							<input class="form-control" type="text" name="mysearch" placeholder="Search Courses" autocomplete="off" id="input_message"/>
+							<input type="submit" hidden>
+							
+							<button type="submit" class="courses_search_button ml-auto">search now</button>
+						</form>
+					</div>
+					<div class="courses_container">
+						<div class="col-lg-12 course_col">
+							<!-- Course -->
+							<!-- <div class="row courses_row"> -->
+								{% for data in itemData %}
+								<table>
+									
+									<tr id="productName" class="row courses_row">
+										{% for row in data %}
+										<td>
+											<div class="course">
+												<div class="course_image"><img src={{ url_for('static', filename='courses/' + row[4]) }} id="itemImage" /></div>
+												
+												<div class="course_body">
+													<h3 class="course_title">	
+														<a href="/courseDisplay">
+															<a href="/courseDisplay?productId={{row[0]}}">
+																{{row[1]}}
+															</a>
+														</a>
+													</h3>
+													<div class="course_teacher">Credit Hours : {{row[2]}}</div>
+													<div class="course_text">
+														<p>{{row[8]}}</p>
+													</div>
+												</div>
+												<div class="course_footer">
+													<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
+													</div>
+												</div>			
+											</div>		
+										</td>
+										{% endfor %}
+									</tr>
+										
+								</table>
+								{% endfor %}	
+							<!-- </div>						 -->
+						</div>
+						
+						<div class="row pagination_row">
+							<div class="col">
+								<div class="pagination_container d-flex flex-row align-items-center justify-content-start">
+									<ul class="pagination_list">
+										<li class="active"><a href="#">1</a></li>
+										
+										
+									</ul>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Courses Sidebar -->
+				<div class="col-lg-4">
+					<div class="sidebar">
+						<!-- Categories -->
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">Categories</div>
+							<div class="sidebar_categories">
+								<ul>
+									<li><a href="/findBusiness">Business</a></li>
+									<li><a href="/findComputerScience">Computer Science</a></li>
+									<li><a href="/findHumanities">Humanities</a></li>
+									<li><a href="/findEngineering">Engineering</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+	<footer class="footer">
+		<div class="footer_background" style="background-image:url(images/footer_background.png)"></div>
+		<div class="container">
+			<div class="row footer_row">
+				<div class="col">
+					<div class="footer_content">
+						<div class="row">
+
+							<div class="col-lg-6 footer_col">
+					
+								<!-- Footer About -->
+								<div class="footer_section footer_about">
+									<div class="footer_logo_container">
+										<a href="#">
+											<div class="footer_logo_text">WhatNext?</div>
+										</a>
+									</div>
+									<div class="footer_about_text">
+										<p>Explore your personality and find what you are born to do.</p>
+									</div>
+									
+								</div>
+								
+							</div>
+
+							<div class="col-lg-6 footer_col">
+					
+								<!-- Footer Contact -->
+								<div class="footer_section footer_contact">
+									<div class="footer_title">Contact Us</div>
+									<div class="footer_contact_info">
+										<ul>
+											<li>Email: whatnextcom71@gmail.com</li>
+											<li>Phone:  0312-6140888</li>
+											<li>FAST NUCES Islamabad, Pakistan</li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row copyright_row">
+				<div class="col">
+					<div class="copyright d-flex flex-lg-row flex-column align-items-center justify-content-start">
+						<div class="cr_text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+						<div class="ml-lg-auto cr_links">
+							<ul class="cr_list">
+								<li><a href="#">Copyright notification</a></li>
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="../static/js/jquery-3.2.1.min.js"></script>
+<script src="../static/styles/bootstrap4/popper.js"></script>
+<script src="../static/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="../static/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="../static/plugins/easing/easing.js"></script>
+<script src="../static/plugins/parallax-js-master/parallax.min.js"></script>
+<script src="../static/plugins/colorbox/jquery.colorbox-min.js"></script>
+<script src="../static/js/courses.js"></script>
+</body>
+</html>
