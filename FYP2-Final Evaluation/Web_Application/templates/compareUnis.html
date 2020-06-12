@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+	.mybutton {
+		background-color: #32C4E8;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+</style>
+<style>
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  background-color: red;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 10%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+</style>
+<head>
+<title>Compare Universities</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Unicat project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../static/styles/bootstrap4/bootstrap.min.css">
+<link href="../static/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="../static/plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../static/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="../static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="../static/plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="../static/styles/courses.css">
+<link rel="stylesheet" type="text/css" href="../static/styles/courses_responsive.css">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Unicat project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../static/styles/bootstrap4/bootstrap.min.css">
+<link href="../static/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="../static/plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../static/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="../static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="../static/plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="../static/styles/course.css">
+<link rel="stylesheet" type="text/css" href="../static/styles/course_responsive.css">
+<link rel="stylesheet" type="text/css" href="../static/styles/blog.css">
+
+</head>
+<body>
+
+<div class="super_container">
+
+	<header class="header">
+			
+		<!-- Top Bar -->
+		<div class="top_bar">
+			<div class="top_bar_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+								<ul class="top_bar_contact_list">
+									<li><div class="question">Have any questions?</div></li>
+									<li>
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<div>0312-6140888</div>
+									</li>
+									<li>
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										<div>whatnextcom71@gmail.com</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+
+		<!-- Header Content -->
+		<div class="header_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_content d-flex flex-row align-items-center justify-content-start">
+							<div class="logo_container">
+								<a href="#">
+									<img src="../static/images/logo.png" style="width:5rem;height:5rem;">
+									<div class="logo_text">WhatNext?</div>
+								</a>
+							</div>
+							<nav class="main_nav_contaner ml-auto">
+								<ul class="main_nav">
+									<li><a href="/">Home</a></li>
+									<li><a href="/findCourse">Find Courses</a></li>
+									<li><a href="/findUni">Find Universities</a></li>
+								</ul>
+							</nav>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+					
+	</header>
+
+	
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="breadcrumbs_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="breadcrumbs">
+							<ul>
+								<li><a href="../index.html">Home</a></li>
+								<li><a href="../universities.html"><li>Universities</li></a></li>
+								<li>Compare Universities</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</div>
+
+	<!-- Courses -->
+
+	<div class="courses">
+		<div class="container">
+			<div class="row">
+				<!-- Courses Main Content -->
+				<div class="col-lg-6">
+					<div class="courses_search_container">
+						<form action="/uniSearchcompareone" id="courses_search_form" class="courses_search_form d-flex flex-row align-items-center justify-content-start">
+					
+							<!-- <input name="text" class="courses_search_input" placeholder="Search Courses" required="required"> -->
+							<input class="form-control" type="text" name="messageone" placeholder="Search Universities" id="input_message"/>
+							<input type="submit" hidden>
+							
+							<button type="submit" class="courses_search_button ml-auto">search now</button>
+						</form>
+					</div>
+					<div class="courses_container">
+						<div class="col-lg-12 course_col">
+							<!-- Course -->
+							<!-- <div class="row courses_row"> -->
+								{% for data1 in itemData1 %}
+								<table>
+									
+									<tr id="productName" class="row courses_row">
+										{% for row in data1 %}
+										<td>
+											<div class="course">
+												<div class="course_image"><img src={{ url_for('static', filename='universities/' + row[11]) }} id="itemImage" /></div>
+												<div class="course_body">
+													<h3 class="course_title">
+														<a href="/UniDisplay">
+															<a href="/UniDisplay?productId={{row[0]}}">
+																{{row[1]}}
+															</a>
+														</a>
+													</h3>
+													<div class="course_teacher">Campus Size : {{row[3]}}</div>
+													<div class="course_text">
+														<p>{{row[15]}}</p>
+													</div>
+												</div>
+												<div class="course_footer">
+													<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
+													</div>
+												</div>			
+											</div>		
+										</td>
+										{% endfor %}
+									</tr>
+										
+								</table>
+								{% endfor %}	
+							<!-- </div>						 -->
+						</div>
+					</div>
+				</div>
+				<!-- Courses Main Content -->
+				<div class="col-lg-6">
+					<div class="courses_search_container">
+						<form action="/uniSearchcomparetwo" id="courses_search_form" class="courses_search_form d-flex flex-row align-items-center justify-content-start">
+					
+							<!-- <input name="text" class="courses_search_input" placeholder="Search Courses" required="required"> -->
+							<input class="form-control" type="text" name="messagetwo" placeholder="Search Universities" id="input_message"/>
+							<input type="submit" hidden>
+							
+							<button type="submit" class="courses_search_button ml-auto">search now</button>
+						</form>
+					</div>
+					<div class="courses_container">
+						<div class="col-lg-12 course_col">
+							<!-- Course -->
+							<!-- <div class="row courses_row"> -->
+								{% for data2 in itemData2 %}
+								<table>
+									
+									<tr id="productName" class="row courses_row">
+										{% for row in data2 %}
+										<td>
+											<div class="course">
+												<div class="course_image"><img src={{ url_for('static', filename='universities/' + row[11]) }} id="itemImage" /></div>
+												<div class="course_body">
+													<h3 class="course_title">
+														
+														<a href="/UniDisplay">
+															<a href="/UniDisplay?productId={{row[0]}}">
+																{{row[1]}}
+															</a>
+														</a>
+													</h3>
+													<div class="course_teacher">Campus Size : {{row[3]}}</div>
+													<div class="course_text">
+														<p>{{row[15]}}</p>
+													</div>
+												</div>
+															
+											</div>		
+										</td>
+										{% endfor %}
+									</tr>
+										
+								</table>
+								{% endfor %}	
+							<!-- </div>						 -->
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footer_background" style="background-image:url(images/footer_background.png)"></div>
+		<div class="container">
+			<div class="row footer_row">
+				<div class="col">
+					<div class="footer_content">
+						<div class="row">
+
+							<div class="col-lg-6 footer_col">
+					
+								<!-- Footer About -->
+								<div class="footer_section footer_about">
+									<div class="footer_logo_container">
+										<a href="#">
+											<div class="footer_logo_text">WhatNext?</div>
+										</a>
+									</div>
+									<div class="footer_about_text">
+										<p>Explore your personality and find what you are born to do.</p>
+									</div>
+									
+								</div>
+								
+							</div>
+
+							<div class="col-lg-6 footer_col">
+					
+								<!-- Footer Contact -->
+								<div class="footer_section footer_contact">
+									<div class="footer_title">Contact Us</div>
+									<div class="footer_contact_info">
+										<ul>
+											<li>Email: whatnextcom71@gmail.com</li>
+											<li>Phone:  0312-6140888</li>
+											<li>FAST NUCES Islamabad, Pakistan</li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row copyright_row">
+				<div class="col">
+					<div class="copyright d-flex flex-lg-row flex-column align-items-center justify-content-start">
+						<div class="cr_text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+						<div class="ml-lg-auto cr_links">
+							<ul class="cr_list">
+								<li><a href="#">Copyright notification</a></li>
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="../static/js/jquery-3.2.1.min.js"></script>
+<script src="../static/styles/bootstrap4/popper.js"></script>
+<script src="../static/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="../static/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="../static/plugins/easing/easing.js"></script>
+<script src="../static/plugins/parallax-js-master/parallax.min.js"></script>
+<script src="../static/plugins/colorbox/jquery.colorbox-min.js"></script>
+<script src="../static/js/courses.js"></script>
+</body>
+</html>
